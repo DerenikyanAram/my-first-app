@@ -1,0 +1,27 @@
+<h1>CREATE USER FORM</h1>
+<form
+        style="margin: 30px 30px 30px 0px; display: flex; flex-direction: column"
+        [formGroup]="form"
+>
+    <p>Title:</p>
+    <input type="text" class="form-input" formControlName="title" />
+    <div *ngIf="form.controls['title'].invalid && (form.controls['title'].dirty || form.controls['title'].touched)" class="alert">
+        <div *ngIf="form.controls['title'].errors">ИМЯ ВВЕДЕНО НЕПРАВИЛЬНО</div>
+    </div>
+
+    <p>Id:</p>
+    <input type="text" class="form-input" formControlName="userId" />
+    <div *ngIf="form.controls['userId'].invalid && (form.controls['userId'].dirty || form.controls['userId'].touched)" class="alert">
+        <div *ngIf="form.controls['userId'].errors">EMAIL ВВЕДЕН НЕПРАВИЛЬНО</div>
+    </div>
+
+    <p>Conp:</p>
+    <input type="text" class="form-input" formControlName="completed" />
+    <div *ngIf="form.controls['completed'].invalid && (form.controls['completed'].dirty || form.controls['completed'].touched)" class="alert">
+        <div *ngIf="form.controls['completed'].errors">WEBSITE ВВЕДЕН НЕПРАВИЛЬНО</div>
+    </div>
+
+
+    <button style="width: 150px; margin-top: 20px" [disabled]="form.invalid" [mat-dialog-close]="newTodo">CREATE USER</button>
+</form>
+

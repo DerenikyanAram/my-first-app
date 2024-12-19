@@ -1,0 +1,29 @@
+.p{
+  font-size: 16px;
+  font-weight: bold;
+}
+.b1{
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(70deg, #2c2c9a, purple);
+  font-weight: bold;
+}
+.b1:hover{
+  background: black;
+  color: aliceblue;
+  padding: 15px;
+}
+.md{
+  width: 200px; height: 200px;
+  border: 1px solid rgba(63, 63, 63, 0.67);
+  margin: 15px;
+  border-radius: 20px;
+  text-align: center; padding: 20px;
+}
+.md:hover{
+  margin: 10px;
+}
+.h1u{
+  text-align: center;
+}

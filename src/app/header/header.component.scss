@@ -1,0 +1,116 @@
+.header {
+  background-color: #1f2937; /* Тёмный фон, как на втором скрине */
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  height: 30px; /* Размер логотипа */
+  margin-right: 15px;
+}
+
+.header__btn-wrapper {
+  display: flex;
+  gap: 10px; /* Расстояние между кнопками */
+  margin-left: auto; /* Сместить кнопки вправо */
+  align-items: center; /* Выровнять по вертикали */
+}
+
+.header__btn-wrapper .button {
+  background: none; /* Убрать фон */
+  border: none; /* Убрать границу */
+  color: #ffffff; /* Белый текст */
+  font-size: 14px; /* Размер текста */
+  cursor: pointer;
+  padding: 0; /* Убрать отступы внутри кнопки */
+  transition: color 0.3s ease;
+}
+
+.header__btn-wrapper .button:hover {
+  color: #10b981; /* Зелёный цвет текста при наведении */
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Расстояние между About и кнопками */
+}
+
+
+.header__right-item {
+  color: #ffffff;
+  margin-left: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header__right-item:hover {
+  color: #10b981; /* Изменение цвета при наведении */
+}
+
+/* Навигационная панель */
+.yellow-nav {
+  background-color: #f59e0b; /* Жёлтый фон */
+  padding: 10px 0;
+}
+
+.yellow-nav .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navigation__left {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__menu-burger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 4px 0;
+}
+
+.navigation__right {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__right-input input {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.navigation__right-location {
+  margin-left: 15px;
+  color: #ffffff;
+  font-size: 14px;
+}

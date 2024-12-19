@@ -1,0 +1,8 @@
+<p class="p">Название задачи</p>
+<p class="p">{{(todo).title}}</p>
+<a href="" class="p">Автор задачи</a>
+<p class="p">{{(todo).userId}}</p>
+<p class="p">Состояние задачи</p>
+<p class="p">{{ todo?.completed === false ? 'нет' : 'Да' }}</p>
+<button (click)="onDeleteUser(todo.id)" class="b1">Delete</button>
+<button (click)="openDialog()" class="b1">Edit</button>

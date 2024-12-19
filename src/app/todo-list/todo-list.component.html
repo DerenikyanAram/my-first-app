@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1 class="h1u">Список задач</h1>
+<div style="display: flex; flex-wrap: wrap; justify-content: center;">
+  <div *ngFor="let item of todo$ | async" class="md">
+    <app-todo-card [todo]="item" (deleteTodo)="deleteTodo($event)" (editTodo)="editTodo(($event))"/>
+  </div>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; margin-top: 20px;">
+  <button mat-raised-button color="black" (click)="addTodo()" class="b1">Добавить пользователя</button>
+</div>
+
+</body>
+</html>
